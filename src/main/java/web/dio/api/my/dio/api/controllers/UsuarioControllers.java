@@ -1,10 +1,7 @@
 package web.dio.api.my.dio.api.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import web.dio.api.my.dio.api.doMain.Usuario;
 
 @RestController
@@ -12,14 +9,16 @@ import web.dio.api.my.dio.api.doMain.Usuario;
 public class UsuarioControllers {
     @Autowired
     private UsuarioRepository repository;
-    @PostMapping
+    @PostMapping()
     public void cadastrar(@RequestBody Usuario usuario){
 
 
             repository.save(usuario);
     }
+    @PutMapping()
+    public void atualizar(@RequestBody Usuario usuario){
 
-
+    }
 
 
 
