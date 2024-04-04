@@ -17,8 +17,11 @@ public class UsuarioControllers {
     }
     @PutMapping()
     public void atualizar(@RequestBody Usuario usuario){
+        repository.update(usuario);
 
     }
+
+    public void
 
 
 
