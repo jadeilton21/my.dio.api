@@ -21,7 +21,10 @@ public class UsuarioControllers {
 
     }
 
-    public void
+    public void deletar(@RequestBody){
+
+
+    }
 
 
 
