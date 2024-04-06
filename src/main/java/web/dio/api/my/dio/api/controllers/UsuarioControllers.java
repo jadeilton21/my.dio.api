@@ -21,7 +21,9 @@ public class UsuarioControllers {
 
     }
 
-    public void deletar(@RequestBody){
+    public void deletar(@RequestBody Usuario usuario){
+
+        repository.delete(usuario);
 
 
     }
