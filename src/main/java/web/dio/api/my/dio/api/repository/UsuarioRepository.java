@@ -19,6 +19,7 @@ public class UsuarioRepository {
     }
 
     public void remove(Integer id) {
+
     }
 
     public List<Usuario> listAll() {
