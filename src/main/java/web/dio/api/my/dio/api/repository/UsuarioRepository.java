@@ -11,6 +11,8 @@ public class UsuarioRepository {
 
 
     public void save(Usuario usuario) {
+        System.out.println("Salvo - Usúario salvo na camada de Repository(banco de dados)");
+        System.out.println(usuario);
 
     }
 
