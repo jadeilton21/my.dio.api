@@ -23,6 +23,8 @@ public class UsuarioRepository {
     }
 
     public void remove(Integer id) {
+        System.out.println(String.format("DELETAR/ID - Deletando o id: %d e excluido o usuario", id));
+        System.out.println(id);
 
     }
 
