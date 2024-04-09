@@ -12,7 +12,6 @@ public class UsuarioRepository {
 
     public void save(Usuario usuario) {
 
-
     }
 
     public void update(Usuario usuario) {
