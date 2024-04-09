@@ -27,5 +27,6 @@ public class UsuarioRepository {
     }
 
     public Usuario finById(Integer id) {
+
     }
 }
