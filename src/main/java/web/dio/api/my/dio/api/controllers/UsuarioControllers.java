@@ -21,7 +21,7 @@ public class UsuarioControllers {
         repository.update(usuario);
 
     }
-
+    @DeleteMapping
     public void deletar(@RequestBody Usuario usuario){
 
         repository.delete(usuario);
