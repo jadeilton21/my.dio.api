@@ -15,6 +15,7 @@ public class UsuarioRepository {
     }
 
     public void update(Usuario usuario) {
+
     }
 
     public void remove(Integer id) {
