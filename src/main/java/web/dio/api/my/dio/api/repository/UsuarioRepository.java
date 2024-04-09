@@ -29,6 +29,8 @@ public class UsuarioRepository {
     }
 
     public List<Usuario> listAll() {
+        System.out.println("LIST - Listando os usários do sistema");
+        List<Usuario> usuarios = new ArrayList<>();
 
     }
 
