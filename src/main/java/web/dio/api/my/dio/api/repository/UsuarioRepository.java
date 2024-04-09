@@ -32,6 +32,9 @@ public class UsuarioRepository {
     public List<Usuario> listAll() {
         System.out.println("LIST - Listando os usários do sistema");
         List<Usuario> usuarios = new ArrayList<>();
+        usuarios.add(new Usuario("gleyson","password"));
+        usuarios.add(new Usuario("frank","masterpass"));
+        return usuarios;
 
     }
 
