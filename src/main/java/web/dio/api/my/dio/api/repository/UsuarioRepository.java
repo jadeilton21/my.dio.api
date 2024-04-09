@@ -23,6 +23,7 @@ public class UsuarioRepository {
     }
 
     public List<Usuario> listAll() {
+
     }
 
     public Usuario finById(Integer id) {
