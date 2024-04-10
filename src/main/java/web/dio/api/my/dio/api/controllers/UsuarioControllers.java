@@ -22,18 +22,18 @@ public class UsuarioControllers {
         repository.update(usuario);
 
     }
-    @DeleteMapping({"id"})
+    @DeleteMapping("/usuario/{id}")
     public void deletarUsuario(@PathVariable("id") Integer id){
 
         repository.remove(id);
 
 
     }
-    @GetMapping
+    @GetMapping("/usuario")
     public List<Usuario> listarUsuario(){
         return repository.listAll();
     }
-    @GetMapping("{id}")
+    @GetMapping("/usuario/{id}")
     public Usuario pegarUm(@PathVariable("id") Integer id){
         return repository.finById(id);
     }
