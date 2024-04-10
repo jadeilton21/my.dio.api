@@ -7,7 +7,10 @@ import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMock
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.web.servlet.MockMvc;
 
+import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.*;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
+
 @SpringBootTest
 @AutoConfigureMockMvc
 class UsuarioControllersTest {
@@ -17,5 +20,11 @@ class UsuarioControllersTest {
     @Test
     @DisplayName("Deve devolver Código Http 404 quando informações estiverem invalidas..")
     void cadastrarUsuario() throws Exception {
+        var response = mockMvc.perform(
+                post("usuario")
+        ).andReturn().getResponse();
+
+        assertThat(response.getStatus())
+                .isEqualTo()
     }
 }
