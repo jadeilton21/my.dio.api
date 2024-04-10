@@ -8,17 +8,16 @@ import web.dio.api.my.dio.api.repository.UsuarioRepository;
 import java.util.List;
 
 @RestController
-@RequestMapping("/usuarios")
 public class UsuarioControllers {
     @Autowired
     private UsuarioRepository repository;
-    @PostMapping()
+    @PostMapping("/usuario")
     public void cadastrarUsuario(@RequestBody Usuario usuario){
 
 
             repository.save(usuario);
     }
-    @PutMapping()
+    @PutMapping("/usuario")
     public void atualizarUsuario(@RequestBody Usuario usuario){
         repository.update(usuario);
 
