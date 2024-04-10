@@ -19,9 +19,9 @@ public class SwaggerConfig {
 
     private Contact contato() {
         return new Contact(
-                "Seu nome",
-                "http://www.seusite.com.br",
-                "voce@seusite.com.br");
+                "jadeilton",
+                "http://www.jaderasta.com.br",
+                "jade@rasta.com.br");
     }
     private ApiInfoBuilder informacoesApi() {
 
@@ -31,8 +31,8 @@ public class SwaggerConfig {
         apiInfoBuilder.description("API exemplo de uso de Springboot REST API");
         apiInfoBuilder.version("1.0");
         apiInfoBuilder.termsOfServiceUrl("Termo de uso: Open Source");
-        apiInfoBuilder.license("Licença - Sua Empresa");
-        apiInfoBuilder.licenseUrl("http://www.seusite.com.br");
+        apiInfoBuilder.license("Licença - jaderasta");
+        apiInfoBuilder.licenseUrl("http://www.jaderasta.com.br");
         apiInfoBuilder.contact(this.contato());
 
         return apiInfoBuilder;
