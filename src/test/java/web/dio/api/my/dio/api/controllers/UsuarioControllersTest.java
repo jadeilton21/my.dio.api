@@ -1,5 +1,6 @@
 package web.dio.api.my.dio.api.controllers;
 
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
@@ -14,6 +15,7 @@ class UsuarioControllersTest {
     private MockMvc mockMvc;
 
     @Test
-    void cadastrarUsuario() {
+    @DisplayName("Deve devolver Código Http 404 quando informações estiverem invalidas..")
+    void cadastrarUsuario() throws Exception {
     }
 }
