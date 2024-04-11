@@ -44,4 +44,8 @@ class UsuarioControllersTest {
 
 
     }
+
+    @Test
+    void deletarUsuario() {
+    }
 }
