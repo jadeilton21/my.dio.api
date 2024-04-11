@@ -60,6 +60,14 @@ class UsuarioControllersTest {
 
     @Test
     @DisplayName("Deve devolver Código Http 404 quando informações estiverem invalidas..")
-    void listarUsuario() {
+    void listarUsuario() throws Exception{
+
+        var response = mockMvc.perform(
+                post("/usuario")
+        ).andReturn().getResponse();
+
+
+        assertThat(response.getStatus())
+                .isEqualTo(HttpStatus.BAD_REQUEST.value());
     }
 }
