@@ -30,4 +30,7 @@ class UsuarioControllersTest {
     }
 
 
+    @Test
+    void atualizarUsuario() {
+    }
 }
