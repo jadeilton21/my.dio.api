@@ -57,4 +57,9 @@ class UsuarioControllersTest {
         assertThat(response.getStatus())
                 .isEqualTo(HttpStatus.BAD_REQUEST.value());
     }
+
+    @Test
+    @DisplayName("Deve devolver Código Http 404 quando informações estiverem invalidas..")
+    void listarUsuario() {
+    }
 }
