@@ -25,7 +25,7 @@ class UsuarioRepositoryTest {
     void save() throws Exception{
 
         var response = mockMvc.perform(
-                (RequestBuilder) post("/usuario")
+                (RequestBuilder) post("/repository")
         ).andReturn().getResponse();
 
 
