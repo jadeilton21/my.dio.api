@@ -8,6 +8,8 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.web.servlet.MockMvc;
 
 import static org.junit.jupiter.api.Assertions.*;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
+
 @SpringBootTest
 @AutoConfigureMockMvc
 class SwaggerConfigTest {
@@ -18,5 +20,10 @@ class SwaggerConfigTest {
     @Test
     @DisplayName("Deve devolver Código Http 404 quando informações estiverem invalidas")
     void detalheApi() throws Exception{
+
+
+        var response = mockMvc
+                .perform(post("application/json"))
+                .andReturn().getResponse();
     }
 }
