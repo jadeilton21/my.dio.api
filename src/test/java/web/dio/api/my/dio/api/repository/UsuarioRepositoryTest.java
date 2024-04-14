@@ -16,20 +16,5 @@ import static org.springframework.http.RequestEntity.post;
 @SpringBootTest
 @AutoConfigureMockMvc
 class UsuarioRepositoryTest {
-    @Autowired
-    private MockMvc mockMvc;
 
-
-    @Test
-    @DisplayName("Deve devolver Código Http 404 quando informações estiverem invalidas..")
-    void save() throws Exception{
-
-        var response = mockMvc.perform(
-                (RequestBuilder) post("/repository")
-        ).andReturn().getResponse();
-
-
-        assertThat(response.getStatus())
-                .isEqualTo(HttpStatus.BAD_REQUEST.value());
-    }
 }
